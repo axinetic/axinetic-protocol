@@ -1,0 +1,226 @@
+{
+ "brand/LOGO AXINETIC JPG.jpg.jpeg": {
+  "bytes": 1834427,
+  "dim": [
+   2000,
+   2000
+  ],
+  "alphaHist8": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4000000
+  ],
+  "pureBlackTransparent": 0
+ },
+ "brand/LOGO AXINETIC PNG...png": {
+  "bytes": 732605,
+  "ihdr": {
+   "w": 2000,
+   "h": 2000,
+   "bitDepth": 8,
+   "colourType": 6
+  },
+  "dim": [
+   2000,
+   2000
+  ],
+  "alphaHist8": [
+   3698991,
+   2837,
+   2242,
+   2038,
+   2114,
+   2401,
+   3501,
+   285876
+  ],
+  "pureBlackTransparent": 3692819
+ },
+ "brand/LOGO AXINETIC PNG.png": {
+  "bytes": 3785934,
+  "ihdr": {
+   "w": 2000,
+   "h": 2000,
+   "bitDepth": 8,
+   "colourType": 6
+  },
+  "dim": [
+   2000,
+   2000
+  ],
+  "alphaHist8": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4000000
+  ],
+  "pureBlackTransparent": 0
+ },
+ "reference/AXINETIC 1.jpg.jpeg": {
+  "bytes": 162642,
+  "dim": [
+   1600,
+   900
+  ],
+  "alphaHist8": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1440000
+  ],
+  "pureBlackTransparent": 0
+ },
+ "reference/AXINETIC 2.jpg.jpeg": {
+  "bytes": 157516,
+  "dim": [
+   1600,
+   900
+  ],
+  "alphaHist8": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1440000
+  ],
+  "pureBlackTransparent": 0
+ },
+ "reference/AXINETIC 3.jpg.jpeg": {
+  "bytes": 159080,
+  "dim": [
+   1600,
+   900
+  ],
+  "alphaHist8": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1440000
+  ],
+  "pureBlackTransparent": 0
+ },
+ "reference/AXINETIC 4.jpg.jpeg": {
+  "bytes": 163631,
+  "dim": [
+   1600,
+   900
+  ],
+  "alphaHist8": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1440000
+  ],
+  "pureBlackTransparent": 0
+ },
+ "reference/AXINETIC 5.jpg.jpeg": {
+  "bytes": 162338,
+  "dim": [
+   1600,
+   900
+  ],
+  "alphaHist8": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1440000
+  ],
+  "pureBlackTransparent": 0
+ },
+ "reference/SAMPUL AXINETIC JPG.jpg.jpeg": {
+  "bytes": 440135,
+  "dim": [
+   1500,
+   500
+  ],
+  "alphaHist8": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   750000
+  ],
+  "pureBlackTransparent": 0
+ },
+ "palette": [
+  {
+   "hex": "#000000",
+   "x": 3,
+   "y": 0,
+   "count": 0
+  },
+  {
+   "hex": "#161615",
+   "x": 136,
+   "y": 50,
+   "count": 0
+  },
+  {
+   "hex": "#0b0b0b",
+   "x": 9,
+   "y": 2,
+   "count": 0
+  },
+  {
+   "hex": "#f0e9d8",
+   "x": 90,
+   "y": 97,
+   "count": 0
+  },
+  {
+   "hex": "#aea38e",
+   "x": 179,
+   "y": 103,
+   "count": 0
+  },
+  {
+   "hex": "#5d5a51",
+   "x": 132,
+   "y": 156,
+   "count": 0
+  },
+  {
+   "hex": "#060606",
+   "x": 124,
+   "y": 0,
+   "count": 0
+  },
+  {
+   "hex": "#030302",
+   "x": 31,
+   "y": 0,
+   "count": 0
+  }
+ ]
+}

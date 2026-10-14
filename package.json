@@ -1,0 +1,15 @@
+{
+  "name": "axinetic",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Axinetic: a live Solana market board.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}

@@ -1,0 +1,70 @@
+{
+ "source": "brand/LOGO AXINETIC PNG...png",
+ "resize": "lanczos3 (libvips premultiplies alpha internally on resize) 500",
+ "clusters": [
+  {
+   "hex": "#f1e8d3",
+   "x": 281,
+   "y": 148,
+   "n": 2758
+  },
+  {
+   "hex": "#f5eddb",
+   "x": 256,
+   "y": 148,
+   "n": 2511
+  },
+  {
+   "hex": "#ece2cd",
+   "x": 302,
+   "y": 171,
+   "n": 2480
+  },
+  {
+   "hex": "#f7f1e4",
+   "x": 232,
+   "y": 146,
+   "n": 2038
+  },
+  {
+   "hex": "#faf6ed",
+   "x": 212,
+   "y": 157,
+   "n": 1832
+  },
+  {
+   "hex": "#e9dec3",
+   "x": 356,
+   "y": 234,
+   "n": 1532
+  },
+  {
+   "hex": "#fcfbf9",
+   "x": 238,
+   "y": 143,
+   "n": 952
+  },
+  {
+   "hex": "#fb944d",
+   "x": 213,
+   "y": 277,
+   "n": 583
+  },
+  {
+   "hex": "#25eb83",
+   "x": 260,
+   "y": 269,
+   "n": 309
+  },
+  {
+   "hex": "#a176fa",
+   "x": 240,
+   "y": 270,
+   "n": 304
+  }
+ ],
+ "ground": {
+  "hex": "#000000",
+  "n": 33292
+ }
+}

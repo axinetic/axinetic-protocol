@@ -1,0 +1,8 @@
+{
+  "ca":     { "id": "ca", "label": "Contract address", "state": "absent", "checked": "2026-10-14" },
+  "x":      { "id": "x", "label": "X", "state": "stated", "url": "https://x.com/axinetic", "checked": "2026-10-14" },
+  "github": { "id": "github", "label": "GitHub", "state": "stated", "url": "https://github.com/axinetic/axinetic-protocol", "checked": "2026-10-14" },
+  "chain":  { "id": "chain", "label": "Chain", "state": "stated", "value": "Solana", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+  "rpc":    { "id": "rpc", "label": "RPC", "state": "stated", "url": "https://solana-rpc.publicnode.com", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+  "market": { "id": "market", "label": "Market source", "state": "stated", "url": "https://api.dexscreener.com", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" }
+}

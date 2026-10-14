@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Axinetic · Solana live board</title>
+<meta name="description" content="A live Solana board: boosted names sorted on traded volume, refreshed every minute.">
+<meta name="theme-color" content="<!--@themecolor-->">
+<meta property="og:title" content="Axinetic">
+<meta property="og:description" content="A live Solana board sorted on traded volume.">
+<meta property="og:image" content="/assets/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@700;900&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body id="top">
+<div id="progress" class="progress" aria-hidden="true"></div>
+<div id="live" class="sr-only" aria-live="polite"></div>
+
+<header class="site-head">
+  <div class="container-x head-row">
+    <a class="brand" href="#top" aria-label="Axinetic">
+      <img class="brand-mark" src="/assets/logo-64.png" width="32" height="32" alt="">
+      <span class="brand-word">AXINETIC</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#board">Board</a>
+      <a href="#method">Method</a>
+      <a href="#register">Register</a>
+    </nav>
+    <div class="head-right">
+      <span id="pill" class="pill" data-status="wait" role="status"><span class="dot" aria-hidden="true"></span><span id="pill-text">Connecting</span></span>
+      <div class="socials"><!--@social--></div>
+    </div>
+  </div>
+  <div class="ca-bar"><div class="container-x"><!--@ca--></div></div>
+</header>
+
+<main>
+  <section id="hero" class="hero">
+    <div class="mesh" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><i class="blob b4"></i></div>
+    <div class="dots" aria-hidden="true" data-depth="0.25"></div>
+    <div class="container-x hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-reveal>▸ Solana · live board</p>
+        <h1 class="h-display" data-reveal><span class="block">Watch the tape.</span><span class="block accent">Catch the pulse.</span></h1>
+        <p class="lede" data-reveal>Axinetic reads boosted Solana names, ranks them by traded size and redraws the board each minute, so a single glance shows where cash rotates.</p>
+        <div class="cta-row" data-reveal>
+          <a class="btn btn-solid" href="#board">See the board</a>
+          <a class="btn btn-line" href="#method">Method notes</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="halo" data-depth="0.5"></div>
+        <img class="hero-logo" data-depth="1" src="/assets/logo-512.png" width="512" height="512" alt="" decoding="async">
+        <div class="floor" data-depth="0.7"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ticker" aria-label="Ticker">
+    <div class="tk-mask"><div id="ticker-track" class="tk-track"><div class="tk-run"><span class="tk-item"><i class="sk-bar" style="width:90px"></i></span><span class="tk-item"><i class="sk-bar" style="width:120px"></i></span><span class="tk-item"><i class="sk-bar" style="width:100px"></i></span><span class="tk-item"><i class="sk-bar" style="width:110px"></i></span></div></div></div>
+  </section>
+
+  <section id="board" class="section container-x">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow">▸ Board</p>
+      <h2 class="h-sec">Ten names, sorted on size traded.</h2>
+      <p class="sec-lede">Rows follow boosted Solana pairs. Each name gets paired alongside whichever pool runs deepest, then sorted on turnover across one day.</p>
+    </div>
+
+    <div class="tiles" data-reveal-group>
+      <div class="tile" data-spot data-reveal data-tile="volume"><p class="tile-k">Volume 24h</p><p class="tile-v sk-text" data-v="">—</p><p class="tile-c">Summed across ten rows</p></div>
+      <div class="tile" data-spot data-reveal data-tile="liquidity"><p class="tile-k">Liquidity</p><p class="tile-v sk-text" data-v="">—</p><p class="tile-c">Pool depth, same ten rows</p></div>
+      <div class="tile" data-spot data-reveal data-tile="mover"><p class="tile-k">Top mover</p><p class="tile-v sk-text">—</p><p class="tile-c">Steepest day gain</p></div>
+      <div class="tile" data-spot data-reveal data-tile="gainers"><p class="tile-k">Gainers</p><p class="tile-v sk-text" data-v="">—</p><p class="tile-c">Rows trading above zero</p></div>
+      <div class="tile" data-spot data-reveal data-tile="decliners"><p class="tile-k">Decliners</p><p class="tile-v sk-text" data-v="">—</p><p class="tile-c">Rows trading below zero</p></div>
+      <div class="tile" data-spot data-reveal data-tile="deep"><p class="tile-k">Deepest pool</p><p class="tile-v sk-text">—</p><p class="tile-c">Deepest book among ten</p></div>
+      <div class="tile" data-spot data-reveal data-tile="avg"><p class="tile-k">Mean move</p><p class="tile-v sk-text" data-v="">—</p><p class="tile-c">Average day change</p></div>
+      <div class="tile" data-spot data-reveal data-tile="turn"><p class="tile-k">Turnover</p><p class="tile-v sk-text" data-v="">—</p><p class="tile-c">Volume against liquidity</p></div>
+    </div>
+
+    <p id="board-note" class="note" role="status" hidden></p>
+
+    <div class="table" role="table" aria-label="Top ten by 24h volume" data-reveal>
+      <div class="row row-head" role="row">
+        <span class="c-rank" role="columnheader">#</span>
+        <span class="c-token" role="columnheader">Token</span>
+        <span class="c-price" role="columnheader">Price</span>
+        <span class="c-change" role="columnheader">24h</span>
+        <span class="c-vol" role="columnheader">Volume</span>
+        <span class="c-liq" role="columnheader">Liquidity</span>
+        <span class="c-copy" role="columnheader">Address</span>
+      </div>
+      <div id="rows" class="rows" role="rowgroup"></div>
+    </div>
+  </section>
+
+  <section id="method" class="section container-x">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow">▸ Method</p>
+      <h2 class="h-sec">Five steps from raw list to ranked board.</h2>
+    </div>
+    <ol class="steps" data-reveal-group>
+      <li class="step" data-spot data-reveal><p class="step-k">Collect</p><h3 class="h-card">Pull the promoted list</h3><p class="step-p">One request returns names that carry paid promotion, across every network.</p></li>
+      <li class="step" data-spot data-reveal><p class="step-k">Filter</p><h3 class="h-card">Keep Solana only</h3><p class="step-p">Entries from other networks drop out before anything else happens.</p></li>
+      <li class="step" data-spot data-reveal><p class="step-k">Resolve</p><h3 class="h-card">Find the deepest pool</h3><p class="step-p">A pair lookup returns each name's pools. The one holding most liquidity speaks for it.</p></li>
+      <li class="step" data-spot data-reveal><p class="step-k">Rank</p><h3 class="h-card">Sort by day volume</h3><p class="step-p">Ten names holding peak twenty-four hour turnover make the cut.</p></li>
+      <li class="step" data-spot data-reveal><p class="step-k">Refresh</p><h3 class="h-card">Repeat each minute</h3><p class="step-p">Polling sleeps while the tab is hidden and resumes on return. Failures retry with growing pauses while earlier numbers stay put.</p></li>
+    </ol>
+  </section>
+
+  <section id="register" class="section container-x">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow">▸ Register</p>
+      <h2 class="h-sec">Stated facts, pending facts.</h2>
+      <p class="sec-lede">Each fact lives within one record. Anything unconfirmed stays inert: no link, no value, only a pending mark.</p>
+    </div>
+    <div class="two" data-reveal-group>
+      <div class="panel" data-spot data-reveal>
+        <h3 class="panel-h">Stated</h3>
+        <ul class="recs"><!--@records-stated--><li class="rec" id="rpc-live"><span class="rec-k">RPC health</span><span class="rec-v" id="rpc-status">—</span></li></ul>
+      </div>
+      <div class="panel" data-spot data-reveal>
+        <h3 class="panel-h">Pending</h3>
+        <ul class="recs"><!--@records-pending--></ul>
+      </div>
+    </div>
+    <div class="warn" data-spot data-reveal>
+      <h3 class="panel-h">Handle with care</h3>
+      <p>Boosted means promoted, never vetted. Prices swing hard, pools can drain without notice, and a large volume figure proves nothing about safety. Treat this board like a window, never advice.</p>
+    </div>
+  </section>
+
+  <section class="section container-x final" data-reveal>
+    <h2 class="h-sec">Bookmark the board.</h2>
+    <p class="sec-lede">Figures refresh by themselves. Nothing to connect, nothing to sign.</p>
+    <a class="btn btn-solid" href="#top">Jump to top</a>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="container-x foot-row">
+    <span class="foot-brand">AXINETIC · SOLANA</span>
+    <nav class="foot-nav" aria-label="Footer"><a href="#board">Board</a><a href="#method">Method</a><a href="#register">Register</a></nav>
+    <p class="foot-note">Market figures come from open pair data and carry no guarantee.</p>
+  </div>
+</footer>
+
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>
